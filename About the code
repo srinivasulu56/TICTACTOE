@@ -1,0 +1,62 @@
+
+Tic Tac Toe Code Overview:
+Initialization (__init__ method):
+
+Sets the initial player to "X".
+Creates a 3x3 game board initialized with empty strings.
+Initializes the main window using Tkinter with the title "Tic Tac Toe".
+Sets up a 3x3 grid of buttons, each button tied to a specific command to handle player moves.
+
+
+
+Make a Move (make_move method):
+
+Checks if the selected cell is empty.
+Updates the board with the current player's move.
+Updates the button text to display the current player's symbol.
+Checks for a winner after the move:
+If a winner is found, displays a message box with the winner's information and resets the game.
+Checks for a draw:
+If a draw is detected, displays a message box indicating the game is a draw and resets the game.
+Switches the current player from "X" to "O" or vice versa.
+
+
+
+Check for Winner (check_winner method):
+
+Checks all rows for a winning combination.
+Checks all columns for a winning combination.
+Checks both diagonals for a winning combination.
+Returns True if the current player has a winning combination, otherwise False.
+Check for Draw (check_draw method):
+
+Iterates through the board to check for any empty cells.
+Returns
+True if there are no empty cells and no winner, indicating a draw, otherwise False.
+
+
+
+Reset Game (reset_game method):
+
+Clears the game board by resetting each cell to an empty string.
+Resets the button texts to empty.
+Sets the current player back to "X".
+Run the Game (run method):
+
+Starts the Tkinter main loop to display the game window and wait for user interaction.
+Code Functionality:
+Game Initialization:
+
+Creates a 3x3 grid of buttons within a Tkinter window.
+Sets up the game board as a list of lists.
+Player Interaction:
+
+Handles button clicks to make moves.
+Updates the board and button text based on the current player.
+Switches turns between "X" and "O".
+Game Logic:
+
+Determines if a player has won after each move.
+Determines if the game has resulted in a draw.
+Displays appropriate messages for win or draw scenarios.
+Resets the game state for a new game after a win or draw.
